@@ -252,6 +252,15 @@ html {
           filter: drop-shadow(7px 7px 6px #0000005d);
 }
 
+#edmSpringLottery .lottery_block .rotater .rotater_mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
 #edmSpringLottery .lottery_block .start {
   top: 0;
   margin-top: auto;
@@ -398,6 +407,10 @@ html {
   width: 330px;
 }
 
+#edmSpringLottery .award_box .award_conainer:nth-child(5) .award_item:after, #edmSpringLottery .award_box .award_conainer:nth-child(6) .award_item:after {
+  background-image: url("../img/percentage_2.png");
+}
+
 #edmSpringLottery .award_box .award_conainer .award_item {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -405,6 +418,32 @@ html {
   width: 210px;
   height: 210px;
   background-image: url("../img/award_bg2.png");
+  position: relative;
+}
+
+#edmSpringLottery .award_box .award_conainer .award_item:after {
+  content: '';
+  position: absolute;
+  right: -60px;
+  top: 0;
+  margin-top: auto;
+  bottom: 0;
+  margin-bottom: auto;
+  width: 65px;
+  height: 85px;
+  background-image: url("../img/percentage_1.png");
+  background-size: 100%;
+  background-position: center;
+}
+
+@media all and (max-width: 400px) {
+  #edmSpringLottery .award_box .award_conainer .award_item:after {
+    right: -20px;
+    width: 50px;
+    height: 70px;
+    -webkit-filter: drop-shadow(1px 1px 2px #0000007e);
+    filter: drop-shadow(1px 1px 2px #0000007e);
+  }
 }
 
 #edmSpringLottery .award_box .award_conainer .award_item .img_numbering {
@@ -568,6 +607,45 @@ html {
   font-weight: bolder;
   color: #bc0f1e;
   -webkit-text-stroke-width: 1px;
+}
+
+.flyer {
+  z-index: 10000000;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  background-color: #ffe89b;
+  border-radius: 50%;
+  /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.596)); */
+  background-position: center;
+  background-size: 100%;
+  -webkit-filter: drop-shadow(1px 1px 3px #00000056);
+  filter: drop-shadow(1px 1px 3px #00000056);
+}
+
+.flyer.img1 {
+  background-image: url("../img/award_03.png");
+}
+
+.flyer.img2 {
+  background-image: url("../img/award_02.png");
+}
+
+.flyer.img3 {
+  background-image: url("../img/award_01.png");
+}
+
+.flyer.img4 {
+  background-image: url("../img/award_04.png");
+}
+
+.flyer.img5 {
+  background-image: url("../img/award_05.png");
+}
+
+.flyer.img6 {
+  background-image: url("../img/award_06.png");
 }
 
 .link {

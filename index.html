@@ -90,10 +90,18 @@
 
             <div id="LotteryRotater" class="lottery_box rotater img_box">
                <img src="img/lottery_rotater.png" />
+               <img id="RotaterMaskAward1" class="rotater_mask" src="img/totater_mask_1.png" data-name="77禮券"/>
+               <img id="RotaterMaskAward2" class="rotater_mask" src="img/totater_mask_2.png" data-name="威秀電影票"/>
+               <img id="RotaterMaskAward3" class="rotater_mask" src="img/totater_mask_3.png" data-name="大碩教育書籍"/>
+               <img id="RotaterMaskAward4" class="rotater_mask" src="img/totater_mask_4.png" data-name="復古風馬克杯"/>
+               <img id="RotaterMaskAward5" class="rotater_mask" src="img/totater_mask_5.png" data-name="XO題庫"/>
+               <img id="RotaterMaskAward6" class="rotater_mask" src="img/totater_mask_6.png" data-name="多益英文單字書"/>
+               <!-- <img id="RotaterMaskAward7" class="rotater_mask" src="img/totater_mask_7.png" /> -->
             </div>
 
             <a id="GoStartLottery" href="javascriptscript:void(0);" class="lottery_box start img_box "  >
                <img src="img/lottery_start.png" />
+
             </a>
          </div>
 
@@ -143,7 +151,7 @@
                      <img src="img/award_01.png"/>
                   </div>
                   <div class="item_name">
-                     <h5 class="title">鼎茂題庫書*10</h5>
+                     <h5 class="title">大碩教育書籍*10</h5>
                      
                      <a href="https://www.tkbgo.com.tw/book/toBookList.jsp?group=3442" class="link" target="_blank">TKB線上書城</a>任選1本500元以內書籍
                   </div>
@@ -222,7 +230,7 @@
 
          <div class="content_block">
             <ul class="des_list">
-               <li class="dex_list_item">⒈當您抽到鼎茂題庫書、XO線上題庫時，需到下方填表處填下您想要的獎品書名/選項。</li>
+               <li class="dex_list_item">⒈當您抽到大碩教育書籍、XO線上題庫時，需到下方填表處填下您想要的獎品書名/選項。</li>
                <li class="dex_list_item">⒉當您抽到華納威秀電影票/7-11禮券時，會由工作人員先寄送領據，填寫完畢回寄到TKB購課網後，才會收到相關票券。</li>
             </ul>
          </div>
@@ -462,13 +470,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/rotate.min.js"></script>
+<script src="js/flyer.min.js"></script>
 
 <script>
    // $('#header').load('header.html');
    // $('#footer').load('footer.html');
 $(document).ready(function(){
 
-         
+   $('.rotater_mask').hide(); 
+   // $('#RotaterMaskAward1').show(); 
+
+   
 	//設定禮品數量
 
    // 判斷當日是否已抽過

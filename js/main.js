@@ -7,7 +7,7 @@
 			// RotateCD();
 			RotateEffect();
 			PercentRandomer();
-			// AverageSwitcher();      
+			// AverageSwitcher();
 			// PercentageTester();
 		});
 		function RotateCD(){
@@ -21,6 +21,7 @@
 
 		}
 
+		//獎品活動期間總數
 		var  r1 = 100,//7-11禮卷
 				r2 = 240,//電影票
 				r3 = 500,//鼎茂題庫書
@@ -28,6 +29,15 @@
 				r5 = 3,//XO線上題庫
 				r6 = 3,//多益單字書
 				r0 = '無限';//銘謝惠顧
+
+		//獎品每日總數
+		var  dr1 = 1,//7-11禮卷
+				dr2 = 1,//電影票
+				dr3 = 1,//鼎茂題庫書
+				dr4 = 1,//馬克杯
+				dr5 = 3,//XO線上題庫
+				dr6 = 3,//多益單字書
+				dr0 = '無限';//銘謝惠顧
 
 		//測試用
 		var  ts1 = 0,//7-11禮卷
@@ -51,7 +61,6 @@
 			ts6 = 0;
 			ts0 = 0;
 		}
-			
 
 		function PercentRandomer(){
 			let percentage = Math.round(Math.random() *10000) ;
@@ -60,7 +69,7 @@
 				if(r1<=0){
 					PercentRandomer();
 				}else{
-					rotateFunc(1, 0, '恭喜你！ 抽中 7-11百元禮券','7-11百元禮券 0度');
+					rotateFunc(1, 0, '恭喜您！！您抽中了 7-11百元禮券','7-11百元禮券 0度');
 					r1--;
 					ts1++;
 				}
@@ -68,7 +77,7 @@
 				if(r2<=0){
 					PercentRandomer();
 				}else{
-					rotateFunc(2, 51.5,'恭喜你！ 抽中 華納威秀電影票', '華納威秀電影票 -51.5度');
+					rotateFunc(2, 51.5,'恭喜您！！您抽中了 華納威秀電影票', '華納威秀電影票 -51.5度');
 					r2--;
 					ts2++;
 				}
@@ -76,7 +85,7 @@
 				if(r3<=0){
 					PercentRandomer();
 				}else{
-					rotateFunc(3, 103,'恭喜你！ 抽中 鼎茂題庫書', '鼎茂題庫書 -103度');
+					rotateFunc(3, 103,'恭喜您！！您抽中了 鼎茂題庫書', '鼎茂題庫書 -103度');
 					r3--;
 					ts3++;
 				}
@@ -84,7 +93,7 @@
 				if(r4<=0){
 					PercentRandomer();
 				}else{
-					rotateFunc(4, 154.5,'恭喜你！ 抽中 復古風馬克杯', '復古風馬克杯 -154.5度');
+					rotateFunc(4, 154.5,'恭喜您！！您抽中了 復古風馬克杯', '復古風馬克杯 -154.5度');
 					r4--;
 					ts4++;
 				}
@@ -92,7 +101,7 @@
 				if(r5<=0){
 					PercentRandomer();
 				}else{
-					rotateFunc(5, 206, '恭喜你！ 抽中 XO線上題庫','XO線上題庫 -206度');
+					rotateFunc(5, 206, '恭喜您！！您抽中了 XO線上題庫','XO線上題庫 -206度');
 					r5--;
 					ts5++;
 				}
@@ -100,12 +109,12 @@
 				if(r6<=0){
 					PercentRandomer();
 				}else{
-					rotateFunc(6, 257.5, '恭喜你！ 抽中 多益英文單字書700袋著走','多益英文單字書700袋著走 -257.5度');
+					rotateFunc(6, 257.5, '恭喜您！！您抽中了 多益英文單字書700袋著走','多益英文單字書700袋著走 -257.5度');
 					r6--;
 					ts6++;
 				}
 			}else if(percentage <= 3000){//30%
-				rotateFunc(7, 309, '嗚嗚！沒關係，明天再來挑戰！','銘謝惠顧 -304度');
+				rotateFunc(0, 309, '嗚嗚！嗚嗚！銘謝惠顧QQ\n別難過！趕快找其他人一起加入TKB購課網會員再玩一次吧！','銘謝惠顧 -304度');
 				ts0++;
 			};
 		};
@@ -136,11 +145,12 @@
 			// RotateBtn.stopRotate();
 			Rotater.rotate({
 				angle: 0, //偏移角度
-				duration:4000, //旋轉時間
+				duration:5000, //旋轉時間
 				animateTo: angle += -3600, //根據得出來的結果加上特定度旋轉 
 				callback: function() {
 					alert(text);
 					$('.bg2').removeClass('rolling_effect');
+					FlyerFlying(awards);
 					isture = false; // 標誌為 執行完畢
 				}
 			});
@@ -148,9 +158,60 @@
 			// console.log(r1,r2,r3,r4,r5,r6,r0);
 		};
 
+   
+   function FlyerFlying(awardsNum){
+		let fyerImagine1 = '<div class="flyer img1"></div>',
+			fyerImagine2 = '<div class="flyer img2"></div>',
+			fyerImagine3 = '<div class="flyer img3"></div>',
+			fyerImagine4 = '<div class="flyer img4"></div>',
+			fyerImagine5 = '<div class="flyer img5"></div>',
+			fyerImagine6 = '<div class="flyer img6"></div>';
+		
+		if(awardsNum == 1){
+			fyerImaginer = fyerImagine1;
+		}else if(awardsNum == 2){
+			fyerImaginer = fyerImagine2;
+		}else if(awardsNum == 3){
+			fyerImaginer = fyerImagine3;
+		}else if(awardsNum == 4){
+			fyerImaginer = fyerImagine4;
+		}else if(awardsNum == 5){
+			fyerImaginer = fyerImagine5;
+		}else if(awardsNum == 6){
+			fyerImaginer = fyerImagine6;
+		}else if(awardsNum == 0){
+			return false;
+		}
 
+      let TerminalX = window.innerWidth - 200;
+		let TerminalY = $('html').offset().top + 40;
+      let FlyerBornX = $('#GoStartLottery').offset().left + ($('#GoStartLottery').width() / 2);
+      let FlyerBornY = $('#GoStartLottery').offset().top - window.pageYOffset;
 
+		setTimeout(() => {
+			$(fyerImaginer).fly({
+				speed: 1, //越大越快，默认1.2
+				vertex_Rtop:1, //运动轨迹最高点top值，默认20
+				start: { 
+					top: FlyerBornY, 
+					left: FlyerBornX ,
+					width: 10, 
+					height: 10 
+				},
+				end: {
+					top: TerminalY, 
+					left: TerminalX, 
+					width: 0, 
+					height: 0 ,
+				},
+				onEnd: function () {
+					this.destory();
+					// alert('獎品已存入會員資訊');
+				}
+			});
+		}, 400);
 
+   }
 
 		var resizeTimer = null;
 		$(window).resize(function(){
@@ -163,6 +224,7 @@
 					$('.advantage_box').addClass('active unbind');
 				}else{
 					$('.advantage_box').removeClass('unactive active unbind');
+					
 				}
 			}, 500);
 		})

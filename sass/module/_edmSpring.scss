@@ -160,6 +160,13 @@ html{
       .shadow{
          filter:drop-shadow(7px 7px 6px #0000005d);
       }
+      .rotater{
+         .rotater_mask{
+            position: absolute;
+            @include aa;
+            // opacity:0;
+         }
+      }
       .start{
          @include atb;
          width: 210px;
@@ -269,6 +276,15 @@ html{
          margin: 0 30px 30px ;
          padding: 0 20px;
          width: 330px;
+
+            &:nth-child(5),
+            &:nth-child(6){
+               .award_item{
+                  &:after{
+                     background-image: url('../img/percentage_2.png');
+                  }
+               }
+            }
          .award_item{
             position: relative;
             box-sizing: border-box;
@@ -276,6 +292,25 @@ html{
             width: 210px;
             height: 210px;
             background-image: url('../img/award_bg2.png');
+            position: relative;
+            &:after{
+               content:'';
+               position: absolute;
+               right: -60px;
+               @include atb;
+               width: 65px;
+               height: 85px;
+               background-image: url('../img/percentage_1.png');
+               background-size: 100%;
+               background-position: center;
+               @include MCW(400px){
+                  right: -20px;
+                  width: 50px;
+                  height: 70px;
+                  @include ds(1px,1px ,2px,#0000007e)
+               }
+            }
+
             .img_numbering{
                @include fxc;
                position: absolute;
@@ -412,7 +447,37 @@ html{
 
 
 
-
+.flyer{
+   z-index: 10000000;
+   display: inline-block;
+   width: 90px;
+   height: 90px;
+   overflow: hidden;
+   background-color:#ffe89b;
+   border-radius: 50%;
+   /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.596)); */
+   background-position: center;
+   background-size: 100%;
+   @include ds(1px ,1px, 3px, #00000056);
+   &.img1{
+      background-image: url('../img/award_03.png');
+   }
+   &.img2{
+      background-image: url('../img/award_02.png');
+   }
+   &.img3{
+      background-image: url('../img/award_01.png');
+   }
+   &.img4{
+      background-image: url('../img/award_04.png');
+   }
+   &.img5{
+      background-image: url('../img/award_05.png');
+   }
+   &.img6{
+      background-image: url('../img/award_06.png');
+   }
+}
 
 .link{
    color:#377282;

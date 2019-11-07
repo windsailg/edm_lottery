@@ -42,327 +42,327 @@
         <article  class="main_content cf">
 
 
-   <!-- 轉盤區塊 -->
-   <div class="area aka">
-      <div class="container type_banner">
+        <!-- 轉盤區塊 -->
+        <div class="area aka">
+            <div class="container type_banner">
 
-         <div class="banner_block">
+              <div class="banner_block">
 
-            <div class="imagine img_box usn" data-aos="flip-left">
-               <img src="img/logo_b.png"/>
-            </div>
-            <div class="imagine img_box usn" data-aos="flip-right" data-aos-delay="500">
-               <img src="img/logo_s.png"/>
-            </div>
-            <div class="description_box">
-               活動期間登入<a href="#" class="hightlight bg_style">TKB會員</a>並完成<span class="hightlight ">手機號碼認證</span>，<br>
-               即可獲得一次抽獎機會，點擊<a href="#GoLottery" class="hightlight bg_style ">開始抽獎</a>     開始玩！
-            </div>
-
-         </div>
-
-         <span id="GoLottery" class="marginer"></span>
-         <div id="LotteryBlock" class="lottery_block usn " ondragstart="return false;" data-aos="flip-up" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="800">
-                        
-            <div class="lottery_box bg img_box" >
-               <img src="img/lottery_bg.png" />
-            </div>
-
-            <div class="lottery_box bg2 img_box">
-               <img src="img/lottery_bg_light.png" />
-            </div>
-
-            <div class="lottery_box bg2 img_box">
-               <img src="img/lottery_bg_light.png" />
-            </div>
-
-            <div class="lottery_box bg2 img_box">
-               <img src="img/lottery_bg_light.png" />
-            </div>
-
-            <div class="lottery_box shadow rotater img_box">
-               <img src="img/lottery_rotater.png" />
-            </div>
-
-            <div id="LotteryRotater" class="lottery_box rotater img_box">
-               <img src="img/lottery_rotater.png" />
-            </div>
-
-            <a id="GoStartLottery" href="javascriptscript:void(0);" class="lottery_box start img_box "  >
-               <img src="img/lottery_start.png" />
-            </a>
-         </div>
-
-      </div>
-   </div>
-
-   <!-- 分析情況 -->
-   <div class="area almond">
-      <div class="title_block deco">
-         <h3 class="title img_box"  title="活動說明">
-            <img src="img/title_event.png" />
-         </h3>
-      </div>
-      <div class="container ">
-
-         <div class="title_block ">
-            <h4 class="subtitle "  title="本次活動說明">
-               <i class="fas fa-gifts"></i>本次活動說明
-            </h4>
-         </div>
-
-         <div class="content_block">
-            <ul class="des_list">
-               <li class="dex_list_item">1.活動時間：2020/01/20～2020/01/29。</li>
-               <li class="dex_list_item">⒉後續獎品處理寄送時間：2020/02/03～2020/02/14。</li>
-               <li class="dex_list_item">⒊活動期間內登入TKB會員並完成手機號碼認證，即可獲得一次抽獎機會。</li>
-               <li class="dex_list_item">⒋每位會員僅有一次中獎機會。</li>
-               <li class="dex_list_item">⒌活動統一於01/30-01/31進行後續處理，活動期間內若有任何問題請在下方填表處留言。</li>
-               <li class="dex_list_item">⒍承辦單位保有本活動辦法之最終解釋及更改權利，活動內容如有任何異動將公告於<a href="https://www.tkbgo.com.tw/" class="link" target="_blank">活動網站</a>，不再另行通知。</li>
-               
-            </ul>
-         </div>
-
-         <div class="title_block ">
-            <h4 class="subtitle "  title="本次活動獎品有">
-               <i class="fas fa-gifts"></i>本次活動獎品有
-            </h4>
-         </div>
-
-         <div class="content_block">
-            
-            <div class="award_box">
-
-               <div class="award_conainer" data-aos="fade-up" >
-                  <div class="award_item img_box">
-                     <span class="img_numbering">1</span>
-                     <img src="img/award_01.png"/>
+                  <div class="imagine img_box usn" data-aos="flip-left">
+                    <img src="img/logo_b.png"/>
                   </div>
-                  <div class="item_name">
-                     <h5 class="title">鼎茂題庫書*10</h5>
-                     
-                     <a href="https://www.tkbgo.com.tw/book/toBookList.jsp?group=3442" class="link" target="_blank">TKB線上書城</a>任選1本500元以內書籍
+                  <div class="imagine img_box usn" data-aos="flip-right" data-aos-delay="500">
+                    <img src="img/logo_s.png"/>
                   </div>
-               </div>
+                  <div class="description_box">
+                    活動期間登入<a href="#" class="hightlight bg_style">TKB會員</a>並完成<span class="hightlight ">手機號碼認證</span>，<br>
+                    即可獲得一次抽獎機會，點擊<a href="#GoLottery" class="hightlight bg_style ">開始抽獎</a>     開始玩！
+                  </div>
 
-               <div class="award_conainer" data-aos="fade-up" data-aos-delay="50">
-                  <div class="award_item img_box">
-                     <span class="img_numbering">2</span>
-                     <img src="img/award_02.png"/>
-                  </div>
-                  <div class="item_name">
-                      <h5 class="title">華納威秀電影票*10</h5>
-                  </div>
-               </div>
+              </div>
 
-               <div class="award_conainer" data-aos="fade-up" data-aos-delay="100">
-                  <div class="award_item img_box">
-                     <span class="img_numbering">3</span>
-                     <img src="img/award_03.png"/>
+              <span id="GoLottery" class="marginer"></span>
+              <div id="LotteryBlock" class="lottery_block usn " ondragstart="return false;" data-aos="flip-up" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="800">
+                              
+                  <div class="lottery_box bg img_box" >
+                    <img src="img/lottery_bg.png" />
                   </div>
-                  <div class="item_name">
-                     <h5 class="title">7-11百元禮券*10</h5>
-                  </div>
-               </div>
 
-               <div class="award_conainer" data-aos="fade-up" >
-                  <div class="award_item img_box">
-                     <span class="img_numbering">4</span>
-                     <img src="img/award_04.png"/>
+                  <div class="lottery_box bg2 img_box">
+                    <img src="img/lottery_bg_light.png" />
                   </div>
-                  <div class="item_name">
-                     <h5 class="title">復古風馬克杯*10</h5>
-                  </div>
-               </div>
 
-               <div class="award_conainer" data-aos="fade-up" data-aos-delay="50">
-                  <div class="award_item img_box">
-                     <span class="img_numbering">5</span>
-                     <img src="img/award_05.png"/>
+                  <div class="lottery_box bg2 img_box">
+                    <img src="img/lottery_bg_light.png" />
                   </div>
-                  <div class="item_name">
-                     <h5 class="title">XO線上題庫*30</h5>
-                     以下三組電子題庫任選1：<a href="https://www.tkbtv.com.tw/tkbxo/examDownload/toDownloadPage.action?lcno=5854&group_seqno=-1" class="link" target="_blank">
-                        108公職共同科目
-                     </a>﹑
-                     <a href="https://www.tkbtv.com.tw/tkbxo/examDownload/toDownloadPage.action?lcno=5433&group_seqno=-1" class="link" target="_blank">
-                        107國營共同科目
-                     </a>﹑
-                     <a href="https://www.tkbtv.com.tw/tkbxo/item/toItemDetail.action?subject_no=X1413ENG000008&f_subject_no=" class="link" target="_blank">
-                        102研究所共同科目
-                     </a>
-                  </div>
-               </div>
 
-               <div class="award_conainer" data-aos="fade-up" data-aos-delay="100">
-                  <div class="award_item img_box">
-                     <span class="img_numbering">6</span>
-                     <img src="img/award_06.png"/>
+                  <div class="lottery_box bg2 img_box">
+                    <img src="img/lottery_bg_light.png" />
                   </div>
-                  <div class="item_name">
-                    <h5 class="title">多益英文單字書700袋著走*30</h5>
+
+                  <div class="lottery_box shadow rotater img_box">
+                    <img src="img/lottery_rotater.png" />
                   </div>
-               </div>
+
+                  <div id="LotteryRotater" class="lottery_box rotater img_box">
+                    <img src="img/lottery_rotater.png" />
+                  </div>
+
+                  <a id="GoStartLottery" href="javascriptscript:void(0);" class="lottery_box start img_box "  >
+                    <img src="img/lottery_start.png" />
+                  </a>
+              </div>
 
             </div>
+        </div>
 
+        <!-- 分析情況 -->
+        <div class="area almond">
+            <div class="title_block deco">
+              <h3 class="title img_box"  title="活動說明">
+                  <img src="img/title_event.png" />
+              </h3>
+            </div>
+            <div class="container ">
 
-         </div>
+              <div class="title_block ">
+                  <h4 class="subtitle "  title="本次活動說明">
+                    <i class="fas fa-gifts"></i>本次活動說明
+                  </h4>
+              </div>
 
+              <div class="content_block">
+                  <ul class="des_list">
+                    <li class="dex_list_item">1.活動時間：2020/01/20～2020/01/29。</li>
+                    <li class="dex_list_item">⒉後續獎品處理寄送時間：2020/02/03～2020/02/14。</li>
+                    <li class="dex_list_item">⒊活動期間內登入TKB會員並完成手機號碼認證，即可獲得一次抽獎機會。</li>
+                    <li class="dex_list_item">⒋每位會員僅有一次中獎機會。</li>
+                    <li class="dex_list_item">⒌活動統一於01/30-01/31進行後續處理，活動期間內若有任何問題請在下方填表處留言。</li>
+                    <li class="dex_list_item">⒍承辦單位保有本活動辦法之最終解釋及更改權利，活動內容如有任何異動將公告於<a href="https://www.tkbgo.com.tw/" class="link" target="_blank">活動網站</a>，不再另行通知。</li>
+                    
+                  </ul>
+              </div>
 
-         <div class="title_block ">
-            <h4 class="subtitle "  title="本次活動獎品有">
-               <i class="fas fa-gifts"></i>特殊獎品說明
-            </h4>
-         </div>
+              <div class="title_block ">
+                  <h4 class="subtitle "  title="本次活動獎品有">
+                    <i class="fas fa-gifts"></i>本次活動獎品有
+                  </h4>
+              </div>
 
-         <div class="content_block">
-            <ul class="des_list">
-               <li class="dex_list_item">⒈當您抽到鼎茂題庫書、XO線上題庫時，需到下方填表處填下您想要的獎品書名/選項。</li>
-               <li class="dex_list_item">⒉當您抽到華納威秀電影票/7-11禮券時，會由工作人員先寄送領據，填寫完畢回寄到TKB購課網後，才會收到相關票券。</li>
-            </ul>
-         </div>
-         
+              <div class="content_block">
+                  
+                  <div class="award_box">
 
-      </div>
-   </div>
+                    <div class="award_conainer" data-aos="fade-up" >
+                        <div class="award_item img_box">
+                          <span class="img_numbering">1</span>
+                          <img src="img/award_01.png"/>
+                        </div>
+                        <div class="item_name">
+                          <h5 class="title">鼎茂題庫書*10</h5>
+                          
+                          <a href="https://www.tkbgo.com.tw/book/toBookList.jsp?group=3442" class="link" target="_blank">TKB線上書城</a>任選1本500元以內書籍
+                        </div>
+                    </div>
 
-   <!-- 快狠準 -->
-   <div class="area gray">
-      <div class="title_block deco">
-         <h3 class="title img_box"  title="年後轉職好時機">
-            <img src="img/title_chance.png" />
-         </h3>
-      </div>
-      <div class="container ">
+                    <div class="award_conainer" data-aos="fade-up" data-aos-delay="50">
+                        <div class="award_item img_box">
+                          <span class="img_numbering">2</span>
+                          <img src="img/award_02.png"/>
+                        </div>
+                        <div class="item_name">
+                            <h5 class="title">華納威秀電影票*10</h5>
+                        </div>
+                    </div>
 
-         <div class="content_block">
-            
-            <div class="feature_box">
+                    <div class="award_conainer" data-aos="fade-up" data-aos-delay="100">
+                        <div class="award_item img_box">
+                          <span class="img_numbering">3</span>
+                          <img src="img/award_03.png"/>
+                        </div>
+                        <div class="item_name">
+                          <h5 class="title">7-11百元禮券*10</h5>
+                        </div>
+                    </div>
 
-               <div class="feature__conainer" data-aos="flip-left" data-aos-delay="0">
-                  <div class="feature_item img_box">
-                     <img src="img/feature_01.png" title="平均公職年薪564,000"/>
+                    <div class="award_conainer" data-aos="fade-up" >
+                        <div class="award_item img_box">
+                          <span class="img_numbering">4</span>
+                          <img src="img/award_04.png"/>
+                        </div>
+                        <div class="item_name">
+                          <h5 class="title">復古風馬克杯*10</h5>
+                        </div>
+                    </div>
+
+                    <div class="award_conainer" data-aos="fade-up" data-aos-delay="50">
+                        <div class="award_item img_box">
+                          <span class="img_numbering">5</span>
+                          <img src="img/award_05.png"/>
+                        </div>
+                        <div class="item_name">
+                          <h5 class="title">XO線上題庫*30</h5>
+                          以下三組電子題庫任選1：<a href="https://www.tkbtv.com.tw/tkbxo/examDownload/toDownloadPage.action?lcno=5854&group_seqno=-1" class="link" target="_blank">
+                              108公職共同科目
+                          </a>﹑
+                          <a href="https://www.tkbtv.com.tw/tkbxo/examDownload/toDownloadPage.action?lcno=5433&group_seqno=-1" class="link" target="_blank">
+                              107國營共同科目
+                          </a>﹑
+                          <a href="https://www.tkbtv.com.tw/tkbxo/item/toItemDetail.action?subject_no=X1413ENG000008&f_subject_no=" class="link" target="_blank">
+                              102研究所共同科目
+                          </a>
+                        </div>
+                    </div>
+
+                    <div class="award_conainer" data-aos="fade-up" data-aos-delay="100">
+                        <div class="award_item img_box">
+                          <span class="img_numbering">6</span>
+                          <img src="img/award_06.png"/>
+                        </div>
+                        <div class="item_name">
+                          <h5 class="title">多益英文單字書700袋著走*30</h5>
+                        </div>
+                    </div>
+
                   </div>
-                  <div class="item_name">
-                     資料來源：行政院主計總處
+
+
+              </div>
+
+
+              <div class="title_block ">
+                  <h4 class="subtitle "  title="本次活動獎品有">
+                    <i class="fas fa-gifts"></i>特殊獎品說明
+                  </h4>
+              </div>
+
+              <div class="content_block">
+                  <ul class="des_list">
+                    <li class="dex_list_item">⒈當您抽到鼎茂題庫書、XO線上題庫時，需到下方填表處填下您想要的獎品書名/選項。</li>
+                    <li class="dex_list_item">⒉當您抽到華納威秀電影票/7-11禮券時，會由工作人員先寄送領據，填寫完畢回寄到TKB購課網後，才會收到相關票券。</li>
+                  </ul>
+              </div>
+              
+
+            </div>
+        </div>
+
+        <!-- 快狠準 -->
+        <div class="area gray">
+            <div class="title_block deco">
+              <h3 class="title img_box"  title="年後轉職好時機">
+                  <img src="img/title_chance.png" />
+              </h3>
+            </div>
+            <div class="container ">
+
+              <div class="content_block">
+                  
+                  <div class="feature_box">
+
+                    <div class="feature__conainer" data-aos="flip-left" data-aos-delay="0">
+                        <div class="feature_item img_box">
+                          <img src="img/feature_01.png" title="平均公職年薪564,000"/>
+                        </div>
+                        <div class="item_name">
+                          資料來源：行政院主計總處
+                        </div>
+                    </div>
+                    <div class="feature__conainer" data-aos="flip-left" data-aos-delay="50">
+                        <div class="feature_item img_box">
+                          <img src="img/feature_02.png" title="平均國營年終 4.4個月"/>
+                        </div>
+                        <div class="item_name">
+                          資料來源：人力資源網站
+                        </div>
+                    </div>
+                    <div class="feature__conainer" data-aos="flip-left" data-aos-delay="100">
+                        <div class="feature_item img_box">
+                          <img src="img/feature_03.png" title="平均研究生起薪33,880"/>
+                        </div>
+                        <div class="item_name">
+                          資料來源：勞動部
+                        </div>
+                    </div>
+
+
                   </div>
-               </div>
-               <div class="feature__conainer" data-aos="flip-left" data-aos-delay="50">
-                  <div class="feature_item img_box">
-                     <img src="img/feature_02.png" title="平均國營年終 4.4個月"/>
+
+              </div>
+
+              <div class="title_block type_bold">
+                  <h4 class="title">
+                    公職國營
+                    <div class="pk img_box"><img src="img/img_pk.png"/></div>
+                    私人企業
+                  </h4>
+              </div>
+
+              <div class="table_block">
+                  <table>
+                    <thead>
+                        <tr>
+                          <th>
+                              公職國營
+                          </th>
+                          <th>
+                              私人企業
+                          </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>
+                              每年(依照考績、年資)調薪<span class="win">勝</span>
+                          </td>
+                          <td>
+                              看老闆、主管心情加薪
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              每年固定有升等考試<span class="win">勝</span>
+                          </td>
+                          <td>
+                              看公司規模等升遷機會
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              穩定、保障、鐵飯碗<span class="win">勝</span>
+                          </td>
+                          <td>
+                              時好時壞、隨經濟變化
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                              招考類組多元，轉調<span class="win">勝</span>
+                          </td>
+                          <td>
+                              不喜歡工作內容只能換公司
+                          </td>
+                        </tr>
+                    </tbody>
+                  </table>
+              </div>
+
+
+              <div class="title_block ">
+                  <h4 class="subtitle black"  title="學員心得">
+                    <i class="fab fa-gratipay"></i>學員心得
+                  </h4>
+              </div>
+
+              <div class="content_block">
+
+                  <div class="video_conainer">
+
+                    <div class="video_item video_box"  data-aos="flip-left" data-aos-delay="0">
+                        <iframe src="https://www.youtube.com/embed/cLb12hQ1aXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video_item video_box"  data-aos="flip-left" data-aos-delay="50">
+                        <iframe src="https://www.youtube.com/embed/7ww9gDC8cz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video_item video_box"  data-aos="flip-left" data-aos-delay="100">
+                        <iframe src="https://www.youtube.com/embed/avpS7R4cWaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
                   </div>
-                  <div class="item_name">
-                     資料來源：人力資源網站
-                  </div>
-               </div>
-               <div class="feature__conainer" data-aos="flip-left" data-aos-delay="100">
-                  <div class="feature_item img_box">
-                     <img src="img/feature_03.png" title="平均研究生起薪33,880"/>
-                  </div>
-                  <div class="item_name">
-                     資料來源：勞動部
-                  </div>
-               </div>
+
+              </div>
+
+              <div class="tip_block">
+                  $年後轉職熱潮來襲，要相信自己一定值得更好的！<br/>
+                  加值自己就趁現在，現在填表了解更多公職/國營/研究所課程，再享優惠價格！$
+              </div>
+
 
 
             </div>
-
-         </div>
-
-         <div class="title_block type_bold">
-            <h4 class="title">
-               公職國營
-               <div class="pk img_box"><img src="img/img_pk.png"/></div>
-               私人企業
-            </h4>
-         </div>
-
-         <div class="table_block">
-            <table>
-               <thead>
-                  <tr>
-                     <th>
-                        公職國營
-                     </th>
-                     <th>
-                        私人企業
-                     </th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>
-                        每年(依照考績、年資)調薪<span class="win">勝</span>
-                     </td>
-                     <td>
-                        看老闆、主管心情加薪
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        每年固定有升等考試<span class="win">勝</span>
-                     </td>
-                     <td>
-                        看公司規模等升遷機會
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        穩定、保障、鐵飯碗<span class="win">勝</span>
-                     </td>
-                     <td>
-                        時好時壞、隨經濟變化
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        招考類組多元，轉調<span class="win">勝</span>
-                     </td>
-                     <td>
-                        不喜歡工作內容只能換公司
-                     </td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
-
-
-         <div class="title_block ">
-            <h4 class="subtitle black"  title="學員心得">
-               <i class="fab fa-gratipay"></i>學員心得
-            </h4>
-         </div>
-
-         <div class="content_block">
-
-            <div class="video_conainer">
-
-               <div class="video_item video_box"  data-aos="flip-left" data-aos-delay="0">
-                  <iframe src="https://www.youtube.com/embed/cLb12hQ1aXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-
-               <div class="video_item video_box"  data-aos="flip-left" data-aos-delay="50">
-                  <iframe src="https://www.youtube.com/embed/7ww9gDC8cz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-
-               <div class="video_item video_box"  data-aos="flip-left" data-aos-delay="100">
-                  <iframe src="https://www.youtube.com/embed/avpS7R4cWaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-
-            </div>
-
-         </div>
-
-         <div class="tip_block">
-            $年後轉職熱潮來襲，要相信自己一定值得更好的！<br/>
-            加值自己就趁現在，現在填表了解更多公職/國營/研究所課程，再享優惠價格！$
-         </div>
-
-
-
-      </div>
-   </div>
+        </div>
 
               <!-- 填單 -->
             <div class="area sakura">
