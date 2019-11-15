@@ -44,7 +44,22 @@
       </div> -->
 
 
+
    <article  class="main_content cf">
+
+   <div id="PleaseLoginBlock" class="please__login__block">
+      <div id="PleaseLoginBox" class="please__login__box">
+         <div class="please__login__content">需「登入」並完成「手機號碼認證」<br/>方能進行抽獎唷～</div>
+         <img src="img/deco_gift.png" />
+         <span class="please__login__button">登入</span>
+         <span id="PleaseLoginClose" class="please__login__close">
+            <span class="please__login__close__item item__a"></span>
+            <span class="please__login__close__item item__b"></span>
+         </span>
+      </div>
+      <div id="PleaseLoginMask" class="please__login__masking"></div>
+   </div>
+
 
    <!-- 轉盤區塊 -->
    <div class="area aka">
@@ -110,11 +125,37 @@
 
    <!-- 分析情況 -->
    <div class="area almond">
+
+      <div class="container type_center">
+
+         <div class="info_block">
+
+            <div class="title_box">
+               <h3 class="title img_box" title="公告">
+                  <img src="img/title_post.png" />
+               </h3>
+            </div>
+
+            <div class="post_box">
+               <div class="post">恭喜！ 7-11百元禮券 已被領取！ヽ(● ´ ∀｀●)ノ</div>
+               <div class="post">恭喜！ 多益英文單字書 已被領取！ヽ(● ´ ∀｀●)ノ</div>
+               <div class="post">恭喜！ 7-11百元禮券 已被領取！ヽ(● ´ ∀｀●)ノ</div>
+               <div class="post">恭喜！ 威秀電影票 已被領取！ヽ(● ´ ∀｀●)ノ</div>
+            </div>
+
+         </div>
+
+         
+      </div>
+
+
+
       <div class="title_block deco">
          <h3 class="title img_box"  title="活動說明">
             <img src="img/title_event.png" />
          </h3>
       </div>
+
       <div class="container ">
 
          <div class="title_block ">
@@ -128,7 +169,7 @@
                <li class="dex_list_item">1.活動時間：2020/01/20～2020/01/29。</li>
                <li class="dex_list_item">⒉後續獎品處理寄送時間：2020/02/03～2020/02/14。</li>
                <li class="dex_list_item">⒊活動期間內登入TKB會員並完成手機號碼認證，即可獲得一次抽獎機會。</li>
-               <li class="dex_list_item">⒋每位會員僅有一次中獎機會。</li>
+               <li class="dex_list_item">⒋每位會員僅有一次中獎機會。每日的獎項數量將於凌晨四點重置。</li>
                <li class="dex_list_item">⒌活動統一於01/30-01/31進行後續處理，活動期間內若有任何問題請在下方填表處留言。</li>
                <li class="dex_list_item">⒍承辦單位保有本活動辦法之最終解釋及更改權利，活動內容如有任何異動將公告於<a href="https://www.tkbgo.com.tw/" class="link" target="_blank">活動網站</a>，不再另行通知。</li>
                
@@ -456,28 +497,28 @@
          </div>
    </div>
 
-
-
    </article>
 
 
    </section>
 
-
 <div id="footer"></div>
 </div>
+
+<!-- global -->
 <script src="./js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- this page -->
+<script src="https://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
 <script src="js/rotate.min.js"></script>
 <script src="js/flyer.min.js"></script>
 
-<script>
-   // $('#header').load('header.html');
-   // $('#footer').load('footer.html');
+<script type="text/javascript">
 $(document).ready(function(){
 
-   $('.rotater_mask').hide(); 
+   $('.rotater_mask').hide();
    // $('#RotaterMaskAward1').show(); 
 
    
@@ -486,8 +527,32 @@ $(document).ready(function(){
    // 判斷當日是否已抽過
    // $('#GoStartLottery').addClass('unactive');
 
-});
 
+   $('#LotteryRotater').click(function(){
+      PleaseLoginShow();
+   });
+
+   $('#PleaseLoginClose , #PleaseLoginMask').click(function(){
+      PleaseLoginHide();
+   });
+
+
+   function PleaseLoginShow() {
+      $('#PleaseLoginBlock').addClass('please__login__box--active');
+
+      $('#PleaseLoginBox').delay(300).animate({ 'top': '20%', 'opacity': '1' }, 300, 'easeOutCubic', function () {
+         // target.remove();
+      });
+   }
+   function PleaseLoginHide() {
+      $('#PleaseLoginBox').animate({ 'top': '0%', 'opacity': '0' }, 300, 'easeOutCubic', function () {
+         $('#PleaseLoginBlock').delay(300).removeClass('please__login__box--active');
+      });
+
+   }
+
+
+});
 </script>
 
 <script src="js/main.js"></script>

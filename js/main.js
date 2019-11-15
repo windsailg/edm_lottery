@@ -3,6 +3,7 @@
 
 	$(document).ready(function(){
 
+
 		$('#GoStartLottery').click(function(){
 			// RotateCD();
 			RotateEffect();
@@ -114,7 +115,7 @@
 					ts6++;
 				}
 			}else if(percentage <= 3000){//30%
-				rotateFunc(0, 309, '嗚嗚！嗚嗚！銘謝惠顧QQ\n別難過！趕快找其他人一起加入TKB購課網會員再玩一次吧！','銘謝惠顧 -304度');
+				rotateFunc(0, 309, '嗚嗚！銘謝惠顧QQ\n別難過！趕快找其他人一起加入TKB購課網會員再玩一次吧！','銘謝惠顧 -304度');
 				ts0++;
 			};
 		};

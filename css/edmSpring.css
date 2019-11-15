@@ -1,5 +1,5 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-.area > .container.type_banner, #edmSpringLottery .banner_block, #edmSpringLottery .lottery_block, #edmSpringLottery .title_block, #edmSpringLottery .title_block.type_bold .title, #edmSpringLottery .award_box, #edmSpringLottery .award_box .award_conainer, #edmSpringLottery .award_box .award_conainer .award_item .img_numbering, #edmSpringLottery .feature_box, #edmSpringLottery .feature_box .feature__conainer, #edmSpringLottery .video_conainer, #edmSpringLottery .video_conainer .video_item {
+.area > .container.type_banner, .area > .container.type_center, #edmSpringLottery .banner_block, #edmSpringLottery .please__login__block, #edmSpringLottery .please__login__block .please__login__box, #edmSpringLottery .lottery_block, #edmSpringLottery .title_block, #edmSpringLottery .title_block.type_bold .title, #edmSpringLottery .info_block, #edmSpringLottery .info_block .title_box, #edmSpringLottery .info_block .post_box, #edmSpringLottery .award_box, #edmSpringLottery .award_box .award_conainer, #edmSpringLottery .award_box .award_conainer .award_item .img_numbering, #edmSpringLottery .feature_box, #edmSpringLottery .feature_box .feature__conainer, #edmSpringLottery .video_conainer, #edmSpringLottery .video_conainer .video_item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -119,6 +119,17 @@ html {
   }
 }
 
+.area > .container.type_center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 @media all and (max-width: 1301px) {
   .area > .container {
     width: 100%;
@@ -177,6 +188,138 @@ html {
   -webkit-transition-duration: .1s;
        -o-transition-duration: .1s;
           transition-duration: .1s;
+}
+
+#edmSpringLottery .please__login__block {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 100;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#edmSpringLottery .please__login__block.please__login__box--active {
+  display: block;
+}
+
+#edmSpringLottery .please__login__block .please__login__box {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 101;
+  max-width: 600px;
+  background-color: #e4c082;
+  padding: 15px;
+  left: 10px;
+  right: 10px;
+  margin: 0  auto;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+  top: 0%;
+}
+
+#edmSpringLottery .please__login__block .please__login__content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding: 4px 35px;
+  font-size: 20px;
+  color: #930d1d;
+  font-weight: bold;
+  text-align: center;
+}
+
+#edmSpringLottery .please__login__block .please__login__button {
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+  padding: 4px  20px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 40px;
+  background-color: #009dad;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#edmSpringLottery .please__login__block .please__login__button:hover {
+  opacity: .8;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+#edmSpringLottery .please__login__block .please__login__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 20px;
+  -webkit-transition: .15s all ease-in-out;
+  -o-transition: .15s all ease-in-out;
+  transition: .15s all ease-in-out;
+  cursor: pointer;
+}
+
+@media all and (max-width: 600px) {
+  #edmSpringLottery .please__login__block .please__login__close {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+#edmSpringLottery .please__login__block .please__login__close > .please__login__close__item {
+  position: absolute;
+  right: 2px;
+  left: 2px;
+  height: 2px;
+  background-color: #888;
+}
+
+#edmSpringLottery .please__login__block .please__login__close > .please__login__close__item.item__a {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#edmSpringLottery .please__login__block .please__login__close > .please__login__close__item.item__b {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#edmSpringLottery .please__login__block .please__login__masking {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  background-color: #00000057;
+  width: 100%;
+  height: 100%;
 }
 
 #edmSpringLottery .lottery_block {
@@ -372,6 +515,74 @@ html {
   width: 60px;
 }
 
+#edmSpringLottery .info_block {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 26px;
+  margin: 25px 0 5px;
+  border-radius: 24px;
+  position: relative;
+  background-color: #BC101D;
+}
+
+#edmSpringLottery .info_block:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  top: 15px;
+  background-image: url("../img/deco_star.png");
+  opacity: .2;
+}
+
+#edmSpringLottery .info_block:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  bottom: 15px;
+  background-image: url("../img/deco_star.png");
+  opacity: .2;
+}
+
+#edmSpringLottery .info_block .title_box {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0 10px;
+}
+
+#edmSpringLottery .info_block .post_box {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px 0 20px;
+  color: #FFE89B;
+  font-size: 18px;
+}
+
+#edmSpringLottery .info_block .post {
+  padding: 4px 0;
+}
+
+@media all and (max-width: 600px) {
+  #edmSpringLottery .info_block .post {
+    font-size: 15px;
+  }
+}
+
 #edmSpringLottery .des_list .dex_list_item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -430,7 +641,8 @@ html {
   bottom: 0;
   margin-bottom: auto;
   width: 65px;
-  height: 85px;
+  height: 70px;
+  background-repeat: no-repeat;
   background-image: url("../img/percentage_1.png");
   background-size: 100%;
   background-position: center;

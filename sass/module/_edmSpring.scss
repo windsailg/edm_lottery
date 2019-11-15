@@ -59,6 +59,10 @@ html{
             padding: 20px 0;
          }
       }
+      &.type_center{
+         @include fxc;
+         align-items: flex-start;
+      }
       @include M1301(){
          width: 100%;
          padding: 10px 10px 10px;
@@ -104,6 +108,95 @@ html{
          border-radius: 40px;
          background-color: #009dad;
          @include nowrap;
+      }
+   }
+
+   .please__login__block{
+      @include fxc;
+      position: fixed;
+      z-index: 100;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: none;;
+      &.please__login__box--active{
+         display: block;;
+      }
+      .please__login__box{
+         @include fxc;
+         position: absolute;
+         z-index: 101;
+         max-width: 600px;
+         background-color: #e4c082;
+         padding: 15px;;
+         left: 10px;
+         right: 10px;
+         margin: 0  auto;
+             
+         border-radius: 5px;;
+         box-sizing: border-box;;
+
+         
+         opacity: 0;
+         top: 0%;     
+
+      }
+      .please__login__content{
+         @include ibl;
+         width: 100%;
+         padding: 4px 35px;
+         font-size: 20px;
+         color:#930d1d;
+         font-weight: bold;
+         text-align: center;;
+      }
+      .please__login__button{
+         @include hover;
+         padding: 4px  20px;
+         margin:   10px 0;
+         width: 100%;;
+         max-width: 200px;
+         border-radius: 40px;
+         background-color: #009dad;
+         text-align: center;;
+         @include nowrap;
+         color:#fff;
+         font-size: 18px;
+      }
+      .please__login__close{
+         position:absolute;
+         top: 15px;
+         right: 15px;;
+         padding: 20px;;
+         transition: .15s all ease-in-out;;
+         cursor: pointer;
+         @include MCW (600px){
+            top: 8px;
+            right: 8px;;
+         }
+         > .please__login__close__item{
+            position: absolute;
+            right: 2px;
+            left: 2px;
+            height: 2px;
+            background-color: #888;;
+            
+            &.item__a{
+               transform: rotate(45deg);
+            }
+            &.item__b{
+               transform: rotate(-45deg);
+            }
+         }
+      }
+      .please__login__masking{
+         @include aa;
+         @include ib;
+         cursor: pointer;
+         position: absolute;
+         background-color: #00000057;
+         width: 100%;
+         height: 100%;
       }
    }
 
@@ -204,7 +297,6 @@ html{
          text-indent: 3px;
          font-weight: bolder;
       }
-
       .subtitle{
          font-size: 27px;
          letter-spacing: 3px;
@@ -219,7 +311,6 @@ html{
             }
          }
       }
-
       &.deco:after{
          content:'';
          display:inline-block;
@@ -250,10 +341,58 @@ html{
          width: 60px;
       }
    }
-   .content_block{
-
+   .info_block{
+      @include fxc;
+      width: 100%;
+      max-width: 1000px;
+      padding: 26px;
+      margin: 25px 0 5px;
+      border-radius: 24px;;
+      position: relative;;
+      background-color:#BC101D;;
+      &:before{
+         content:'';
+         position: absolute;
+         left: 0;
+         right: 0;
+         height: 20px;;
+         top: 15px;;
+         background-image: url('../img/deco_star.png');
+         // mix-blend-mode:difference;
+         opacity: .2;
+      }
+      &:after{
+         content:'';
+         position: absolute;
+         left: 0;
+         right: 0;
+         height: 20px;;
+         bottom: 15px;
+         background-image: url('../img/deco_star.png');
+         // mix-blend-mode:difference;
+         opacity: .2;
+      }
+      .title_box{
+         @include fxc;
+         width: 100%;
+         max-width: 700px;
+         margin: 20px 0 10px;
+      }
+      .post_box{
+         @include fxc;
+         width: 100%;
+         max-width: 700px;
+         margin: 10px 0 20px;
+         color: #FFE89B;
+         font-size: 18px;;
+      }
+      .post{
+         padding: 4px 0;;
+         @include MCW(600px){
+            font-size: 15px;
+         }
+      }
    }
-
    .des_list{
       .dex_list_item{
          @include ibl;
@@ -276,7 +415,6 @@ html{
          margin: 0 30px 30px ;
          padding: 0 20px;
          width: 330px;
-
             &:nth-child(5),
             &:nth-child(6){
                .award_item{
@@ -299,7 +437,8 @@ html{
                right: -60px;
                @include atb;
                width: 65px;
-               height: 85px;
+               height: 70px;
+               background-repeat: no-repeat;;
                background-image: url('../img/percentage_1.png');
                background-size: 100%;
                background-position: center;
@@ -431,7 +570,6 @@ html{
       }
 
    }
-
    .tip_block{
       margin: 10px auto;
       width: 100%;
