@@ -1,5 +1,5 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-.area > .container.type_banner, .area > .container.type_center, #edmSpringLottery .banner_block, #edmSpringLottery .please__login__block, #edmSpringLottery .please__login__block .please__login__box, #edmSpringLottery .lottery_block, #edmSpringLottery .title_block, #edmSpringLottery .title_block.type_bold .title, #edmSpringLottery .info_block, #edmSpringLottery .info_block .title_box, #edmSpringLottery .info_block .post_box, #edmSpringLottery .award_box, #edmSpringLottery .award_box .award_conainer, #edmSpringLottery .award_box .award_conainer .award_item .img_numbering, #edmSpringLottery .feature_box, #edmSpringLottery .feature_box .feature__conainer, #edmSpringLottery .video_conainer, #edmSpringLottery .video_conainer .video_item {
+.area > .container.type_banner, .area > .container.type_center, #edmSpringLottery .banner_block, #edmSpringLottery .please__login__block, #edmSpringLottery .please__login__block .please__login__box, #edmSpringLottery .alerter__block, #edmSpringLottery .alerter__block .alerter__box, #edmSpringLottery .alerter__block .alerter__content, #edmSpringLottery .alerter__block .radio_container, #edmSpringLottery .gift__detail__block, #edmSpringLottery .gift__detail__block .gift__detail__box, #edmSpringLottery .gift__detail__block .gift__detail__list, #edmSpringLottery .gift__detail__block .gift__detail__list__item, #edmSpringLottery .gift__detail__block .gift__img, #edmSpringLottery .lottery_block, #edmSpringLottery .title_block, #edmSpringLottery .title_block.type_bold .title, #edmSpringLottery .info_block, #edmSpringLottery .info_block .title_box, #edmSpringLottery .info_block .post_box, #edmSpringLottery .award_box, #edmSpringLottery .award_box .award_conainer, #edmSpringLottery .award_box .award_conainer .award_item, #edmSpringLottery .award_box .award_conainer .award_item .img_numbering, #edmSpringLottery .feature_box, #edmSpringLottery .feature_box .feature__conainer, #edmSpringLottery .video_conainer, #edmSpringLottery .video_conainer .video_item, .radio_box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -291,7 +291,7 @@ html {
   right: 2px;
   left: 2px;
   height: 2px;
-  background-color: #888;
+  background-color: #eeeeeeda;
 }
 
 #edmSpringLottery .please__login__block .please__login__close > .please__login__close__item.item__a {
@@ -307,6 +307,384 @@ html {
 }
 
 #edmSpringLottery .please__login__block .please__login__masking {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  background-color: #00000057;
+  width: 100%;
+  height: 100%;
+}
+
+#edmSpringLottery .alerter__block {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 100;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#edmSpringLottery .alerter__block.alerter__block--active {
+  display: block;
+}
+
+#edmSpringLottery .alerter__block .alerter__title {
+  font-size: 25px;
+  padding: 25px 35px 4px;
+  color: #930d1d;
+  font-weight: bold;
+}
+
+#edmSpringLottery .alerter__block .alerter__box {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 101;
+  max-width: 600px;
+  background-color: #e4c082;
+  padding: 15px;
+  left: 10px;
+  right: 10px;
+  margin: 0  auto;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+  top: 0%;
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#edmSpringLottery .alerter__block .alerter__content {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 5px 35px 4px;
+  font-size: 20px;
+  color: #930d1d;
+  font-weight: bold;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+@media all and (max-width: 620px) {
+  #edmSpringLottery .alerter__block .alerter__content {
+    padding: 25px 15px 4px;
+    text-align: left;
+    font-size: 15px;
+  }
+}
+
+#edmSpringLottery .alerter__block .radio_container {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  max-width: 400px;
+}
+
+#edmSpringLottery .alerter__block .alerter__button {
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+  padding: 4px  20px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 40px;
+  background-color: #009dad;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#edmSpringLottery .alerter__block .alerter__button:hover {
+  opacity: .8;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+#edmSpringLottery .alerter__block .alerter__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 20px;
+  -webkit-transition: .15s all ease-in-out;
+  -o-transition: .15s all ease-in-out;
+  transition: .15s all ease-in-out;
+  cursor: pointer;
+}
+
+@media all and (max-width: 600px) {
+  #edmSpringLottery .alerter__block .alerter__close {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+#edmSpringLottery .alerter__block .alerter__close > .alerter__close__item {
+  position: absolute;
+  right: 2px;
+  left: 2px;
+  height: 2px;
+  background-color: #eeeeeeda;
+}
+
+#edmSpringLottery .alerter__block .alerter__close > .alerter__close__item.item__a {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#edmSpringLottery .alerter__block .alerter__close > .alerter__close__item.item__b {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#edmSpringLottery .alerter__block .alerter__mask {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  background-color: #00000057;
+  width: 100%;
+  height: 100%;
+}
+
+#edmSpringLottery .gift__detail__block {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 100;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#edmSpringLottery .gift__detail__block.gift__detail__block--active {
+  display: block;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__box {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  z-index: 101;
+  max-width: 1200px;
+  background-color: #e4c082;
+  padding: 15px 28px;
+  left: 10px;
+  right: 10px;
+  margin: 0  auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  opacity: 0;
+  top: 0%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding: 0px 25px 20px;
+  font-size: 20px;
+  color: #930d1d;
+  font-weight: bold;
+  text-align: center;
+  max-height: 640px;
+  height: 90%;
+  margin: 50px 5px  0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__content::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.63);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__list {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: auto;
+}
+
+@media all and (max-width: 1190px) {
+  #edmSpringLottery .gift__detail__block .gift__detail__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__list__item {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 15px;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__list__item__link {
+  font-size: 17px;
+  margin: 10px 0;
+  color: #009dad;
+}
+
+#edmSpringLottery .gift__detail__block .gift__img {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 210px;
+  height: 210px;
+  margin: 20px 0 0;
+  background-image: url("../img/award_bg2.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#edmSpringLottery .gift__detail__block .gift__img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__button {
+  -webkit-transition: 0.2s all ease-out;
+  -o-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+  cursor: pointer;
+  padding: 4px  20px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 40px;
+  background-color: #009dad;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  max-height: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__button:hover {
+  opacity: .8;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 20px;
+  -webkit-transition: .15s all ease-in-out;
+  -o-transition: .15s all ease-in-out;
+  transition: .15s all ease-in-out;
+  cursor: pointer;
+}
+
+@media all and (max-width: 600px) {
+  #edmSpringLottery .gift__detail__block .gift__detail__close {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__close > .gift__detail__close__item {
+  position: absolute;
+  right: 2px;
+  left: 2px;
+  height: 2px;
+  background-color: #eeeeeeda;
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__close > .gift__detail__close__item.item__a {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__close > .gift__detail__close__item.item__b {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#edmSpringLottery .gift__detail__block .gift__detail__mask {
   top: 0;
   bottom: 0;
   right: 0;
@@ -527,6 +905,7 @@ html {
   border-radius: 24px;
   position: relative;
   background-color: #BC101D;
+  display: none;
 }
 
 #edmSpringLottery .info_block:before {
@@ -623,6 +1002,10 @@ html {
 }
 
 #edmSpringLottery .award_box .award_conainer .award_item {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -663,6 +1046,8 @@ html {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  top: 7px;
+  left: 10px;
   position: absolute;
   padding: 4px;
   width: 30px;
@@ -821,6 +1206,98 @@ html {
   -webkit-text-stroke-width: 1px;
 }
 
+.radio_box {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: auto;
+  min-width: 90px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 0 18px 0 0;
+  cursor: pointer;
+}
+
+.radio_box .radio {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  width: 25px;
+  height: 15px;
+  position: absolute;
+  opacity: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.radio_box .radio:checked ~ label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #009dad;
+  top: 0;
+  margin-top: auto;
+  bottom: 0;
+  margin-bottom: auto;
+}
+
+.radio_box .radio:checked ~ label:before {
+  border-color: #009dad;
+}
+
+.radio_box .label {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: left;
+  padding: 10px 0 10px 30px;
+}
+
+@media all and (max-width: 620px) {
+  .radio_box .label {
+    padding: 7px 0 7px 30px;
+  }
+}
+
+.radio_box .label:before {
+  content: "";
+  top: 0;
+  margin-top: auto;
+  bottom: 0;
+  margin-bottom: auto;
+  position: absolute;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.radio_box::after {
+  width: 100%;
+  display: block;
+  height: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  float: left;
+}
+
 .flyer {
   z-index: 10000000;
   display: inline-block;
@@ -861,7 +1338,7 @@ html {
 }
 
 .link {
-  color: #377282;
+  color: #009dad;
   text-decoration: underline;
   -webkit-transition: 0.2s all ease-out;
   -o-transition: 0.2s all ease-out;
@@ -995,4 +1472,22 @@ html {
   100% {
     opacity: 0;
   }
+}
+
+#edmSpringLottery .alerter__block .alerter__box::-webkit-scrollbar, #edmSpringLottery .alerter__block .alerter__content::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+#edmSpringLottery .alerter__block .alerter__box::-webkit-scrollbar-track, #edmSpringLottery .alerter__block .alerter__content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+#edmSpringLottery .alerter__block .alerter__box::-webkit-scrollbar-thumb, #edmSpringLottery .alerter__block .alerter__content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.63);
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
 }

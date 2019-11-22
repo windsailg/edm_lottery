@@ -3,6 +3,27 @@
 
 	$(document).ready(function(){
 
+		$('#GiftDetailShow').click(function () {
+			GiftDetailShow();
+		});
+
+		$('#GiftDetailClose , #GiftDetailMask').click(function () {
+			GiftDetailHide();
+		});
+
+		function GiftDetailShow() {
+			$('#GiftDetail').addClass('gift__detail__block--active');
+			$('#GiftDetailBox').delay(300).animate({ 'top': '6%', 'opacity': '1' }, 300, 'easeOutCubic', function () {
+				// target.remove();
+			});
+		};
+
+		function GiftDetailHide() {
+			$('#GiftDetailBox').animate({ 'top': '0%', 'opacity': '0' }, 300, 'easeOutCubic', function () {
+				$('#GiftDetail').delay(300).removeClass('gift__detail__block--active');
+			});
+		};
+
 
 		$('#GoStartLottery').click(function(){
 			// RotateCD();

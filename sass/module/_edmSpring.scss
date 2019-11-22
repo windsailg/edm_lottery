@@ -70,11 +70,6 @@ html{
    }
 }
 
-%blocks{
-   margin: 20px 0 10px;
-}
-
-
 #edmSpringLottery{
 
 
@@ -179,7 +174,7 @@ html{
             right: 2px;
             left: 2px;
             height: 2px;
-            background-color: #888;;
+            background-color: #eeeeeeda;
             
             &.item__a{
                transform: rotate(45deg);
@@ -199,7 +194,266 @@ html{
          height: 100%;
       }
    }
+   .alerter__block{
+      @include fxc;
+      position: fixed;
+      z-index: 100;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: none;;
+      &.alerter__block--active{
+         display: block;;
+      }
+      .alerter__title{
+         font-size: 25px;
+         padding: 25px 35px 4px;
+         color:#930d1d;
+         font-weight: bold;
+      }
+      .alerter__box{
+         @include fxc;
+         position: absolute;
+         z-index: 101;
+         max-width: 600px;
+         background-color: #e4c082;
+         padding: 15px;;
+         left: 10px;
+         right: 10px;
+         margin: 0  auto;
+             
+         border-radius: 5px;;
+         box-sizing: border-box;;
 
+         opacity: 0;
+         top: 0%;     
+
+         max-height: 80vh;
+         overflow-x: hidden;
+         overflow-y: scroll;
+         @extend %ScrollBarStyle;
+      }
+      .alerter__content{
+         @include fxc;
+         width: 100%;
+         padding: 5px 35px 4px;
+         font-size: 20px;
+         color:#930d1d;
+         font-weight: bold;
+         text-align: center;;
+         overflow-x: hidden;
+         overflow-y: scroll;
+         max-height: 50vh;
+
+         @include MCW(620px){
+            padding: 25px 15px 4px;
+            text-align: left;;
+            font-size: 15px;
+         }
+         @extend %ScrollBarStyle;
+      }
+      .radio_container{
+         @include fxfs;
+         width: 100%;;
+         max-width: 400px;
+      }
+      .alerter__button{
+         @include hover;
+         padding: 4px  20px;
+         margin:   10px 0;
+         width: 100%;;
+         max-width: 200px;
+         border-radius: 40px;
+         background-color: #009dad;
+         text-align: center;;
+         @include nowrap;
+         color:#fff;
+         font-size: 18px;
+      }
+      .alerter__close{
+         position:absolute;
+         top: 15px;
+         right: 15px;;
+         padding: 20px;;
+         transition: .15s all ease-in-out;;
+         cursor: pointer;
+         @include MCW (600px){
+            top: 8px;
+            right: 8px;;
+         }
+         > .alerter__close__item{
+            position: absolute;
+            right: 2px;
+            left: 2px;
+            height: 2px;
+            background-color: #eeeeeeda;
+            
+            &.item__a{
+               transform: rotate(45deg);
+            }
+            &.item__b{
+               transform: rotate(-45deg);
+            }
+         }
+      }
+      .alerter__mask{
+         @include aa;
+         @include ib;
+         cursor: pointer;
+         position: absolute;
+         background-color: #00000057;
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .gift__detail__block{
+      @include fxc;
+      position: fixed;
+      z-index: 100;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      display: none;;
+      &.gift__detail__block--active{
+         display: block;;
+      }
+      .gift__detail__box{
+         @include fxc;
+         box-sizing: border-box;;
+         position: absolute;
+         z-index: 101;
+         max-width: 1200px;
+
+         background-color: #e4c082;
+         padding: 15px 28px;;
+         left: 10px;
+         right: 10px;
+         margin: 0  auto;
+             
+         border-radius: 5px;;
+         box-sizing: border-box;;
+
+         opacity: 0;
+         top: 0%;     
+         height: 80vh;;
+         overflow: hidden;;
+
+      }
+      .gift__detail__content{
+         @include ibl;
+         width: 100%;
+         padding: 0px 25px 20px;
+         font-size: 20px;
+         color:#930d1d;
+         font-weight: bold;
+         text-align: center;;
+         max-height: 640px;
+         height: 90%;
+         margin: 50px 5px  0;
+         overflow-x: hidden;
+         overflow-y: scroll;
+         &::-webkit-scrollbar {
+            width: 4px;
+            background-color:transparent;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+         }
+         &::-webkit-scrollbar-track {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            margin:8px 0 ;
+         }
+         &::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.63);
+            border-style: solid;
+            border-width: 0px 0px 0px 0px;
+         }
+      }
+      .gift__detail__list{
+         @include fxfs;
+         align-items: flex-start;;
+         width:auto;
+         @include MCW(1190px){
+            justify-content: center;;
+         };
+      }
+      .gift__detail__list__item{
+         @include fxc;
+         width: 100%;;
+         max-width: 320px;;
+         margin: 0 15px;;
+      }
+      .gift__detail__list__item__link{
+         font-size: 17px;;
+         margin: 10px 0;;
+         color:#009dad;
+      }
+      .gift__img{
+         @include fxc;
+         box-sizing: border-box;;
+         width: 210px;;
+         height: 210px;;
+         margin: 20px 0 0;
+         background-image: url('../img/award_bg2.png');
+         background-size: cover;;;
+         overflow: hidden;;
+         position: relative;
+         img{
+            max-width: 100%;
+            max-height: 100%;
+         }
+      }
+      .gift__detail__button{
+         @include hover;
+         padding: 4px  20px;
+         margin:   10px 0;
+         width: 100%;;
+         max-width: 200px;
+         border-radius: 40px;
+         background-color: #009dad;
+         text-align: center;;
+         @include nowrap;
+         color:#fff;
+         font-size: 18px;
+      }
+      .gift__detail__close{
+         position:absolute;
+         top: 15px;
+         right: 15px;;
+         padding: 20px;;
+         transition: .15s all ease-in-out;;
+         cursor: pointer;
+         @include MCW (600px){
+            top: 8px;
+            right: 8px;;
+         }
+         > .gift__detail__close__item{
+            position: absolute;
+            right: 2px;
+            left: 2px;
+            height: 2px;
+            background-color: #eeeeeeda;;
+            
+            &.item__a{
+               transform: rotate(45deg);
+            }
+            &.item__b{
+               transform: rotate(-45deg);
+            }
+         }
+      }
+      .gift__detail__mask{
+         @include aa;
+         @include ib;
+         cursor: pointer;
+         position: absolute;
+         background-color: #00000057;
+         width: 100%;
+         height: 100%;
+      }
+   }
    .lottery_block{
       @include fxc;
       box-sizing: border-box;
@@ -350,6 +604,7 @@ html{
       border-radius: 24px;;
       position: relative;;
       background-color:#BC101D;;
+      display: none;;
       &:before{
          content:'';
          position: absolute;
@@ -421,9 +676,11 @@ html{
                   &:after{
                      background-image: url('../img/percentage_2.png');
                   }
+                  
                }
             }
          .award_item{
+            @include fxc;
             position: relative;
             box-sizing: border-box;
 
@@ -431,6 +688,7 @@ html{
             height: 210px;
             background-image: url('../img/award_bg2.png');
             position: relative;
+
             &:after{
                content:'';
                position: absolute;
@@ -449,9 +707,10 @@ html{
                   @include ds(1px,1px ,2px,#0000007e)
                }
             }
-
             .img_numbering{
                @include fxc;
+               top: 7px;
+               left: 10px;;;
                position: absolute;
                padding: 4px;
                width: 30px;
@@ -581,9 +840,73 @@ html{
       -webkit-text-stroke-width: 1px;
    }
 
+
+
 }
 
+.radio_box{
+   @include fxc;
+   float: left;
+   width: auto;
+   min-width: 90px;
+   align-items: center;
+   box-sizing: border-box;
+   position: relative;
+   padding: 0 18px 0 0;
+   cursor: pointer;
+   .radio {
+      @include ibl;
+      width: 25px;
+      height: 15px;
+      position: absolute;
+      opacity: 0;
+      margin:  0 auto;;
+      cursor: pointer;
+      &:checked ~ label:after {
+         content: "";
+         position: absolute;
+         top: 5px;
+         left: 5px;
+         width: 15px;
+         height: 15px;
+         border-radius: 50%;
+         background: #009dad;
+         @include atb;
 
+      }
+      &:checked ~ label:before {
+         border-color: #009dad;
+      }
+   }
+
+   .label {
+      cursor: pointer;
+      user-select: none;
+      text-align: left;
+      padding: 10px 0 10px 30px;;
+      @include MCW(620px){
+         padding: 7px 0 7px 30px;;
+      }
+      &:before {
+         content: "";
+         @include atb;
+         position: absolute;
+         left: 0;
+         height: 23px;
+         width: 23px;
+         background-color: #fff;
+         border-radius: 50%;
+         border: 1px solid rgba(0, 0, 0, 0.4);
+      }
+   }
+
+    &::after{
+       width: 100%;
+       display: block;
+       height: 1px;
+       @include ibl;;
+    }
+}
 
 .flyer{
    z-index: 10000000;
@@ -618,7 +941,7 @@ html{
 }
 
 .link{
-   color:#377282;
+   color:#009dad;
    text-decoration: underline;
    @include hover;
 }
@@ -686,7 +1009,6 @@ html{
    user-select: none;
 }
 
-
 @keyframes blink{
    0%{
       opacity: 0;
@@ -702,5 +1024,30 @@ html{
    }
    100%{
       opacity: 0;
+   }
+}
+
+%blocks{
+   margin: 20px 0 10px;
+}
+
+%ScrollBarStyle{
+   &::-webkit-scrollbar {
+      width: 4px;
+      background-color:transparent;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+   }
+   &::-webkit-scrollbar-track {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      margin:8px 0 ;
+   }
+   &::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.63);
+      border-style: solid;
+      border-width: 0px 0px 0px 0px;
    }
 }
